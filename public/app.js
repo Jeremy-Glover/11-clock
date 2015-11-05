@@ -1,7 +1,12 @@
-var d = new Date() {
-    Date.getHours();
-    Date.getMinutes();
-    Date.getSeconds();
-};
+(function() {
+  var time = document.querySelector('.time');
 
-Date();
+
+  window.setInterval(() => {
+    var d = new Date();
+    console.log(d);
+    var now = `${d.getHours()}:${d.getMinutes()}:${d.getSeconds()}`
+    time.innerHTML = now;
+  }, 1000);
+
+})();
