@@ -1,6 +1,7 @@
-html {
-  box-sizing: border-box;
-}
-*, *:before, *:after {
-  box-sizing: inherit;
-}
+var d = new Date() {
+    Date.getHours();
+    Date.getMinutes();
+    Date.getSeconds();
+};
+
+Date();
