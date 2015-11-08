@@ -15,8 +15,10 @@ html {
 
 .container {
   display: flex;
+  flex-direction: column;
   background: red;
   height: 100vh;
+  align-content: center;
   font-family: 'Averia Sans Libre', cursive;
   font-size: 4rem;
 }
