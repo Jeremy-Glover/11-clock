@@ -12,13 +12,12 @@ html {
   box-sizing: inherit;
 }
 
-
 .container {
   display: flex;
   flex-direction: column;
-  background: red;
   height: 100vh;
   align-content: center;
+  justify-content: center;
   font-family: 'Averia Sans Libre', cursive;
   font-size: 4rem;
 }
@@ -28,17 +27,28 @@ html {
   flex-direction: column;
   align-items: center;
   color: rgb(238, 240, 227);
-  margin: auto;
 }
 
 .time {
-  display: flex;
+  margin: 0;
 }
 
 .line {
   content: '';
-  display: block;
   width: 40rem;
   height: .2rem;
   background: rgb(238, 240, 227);
+}
+
+.color {
+  display: none;
+}
+
+.clock:hover {
+.color {
+  display: block;
+}
+.time {
+display: none;
+}
 }
